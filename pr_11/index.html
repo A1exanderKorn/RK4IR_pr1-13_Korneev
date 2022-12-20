@@ -1,0 +1,160 @@
+<html lang="en">
+    <head>
+        
+        <meta charset="UTF-8">
+        <link rel="icon" href="fav.png" type="image/png">
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <title>Практика 11</title>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap');
+        </style>
+    </head>
+    <body onload="myFunc(); interval()">
+        <header>
+            <input type="checkbox" class="logo-checkbox" id="logo-checkbox"> 
+            <label for="logo-checkbox" id="logo-label"></label>
+            <div class="burger">
+                <span></span>
+            </div>
+            
+            <nav class="logo">
+                <a href="index.html"><img src="fav.png" alt="Солнечная система" class="logo-img"></a>
+                <div class="registration">
+                    <a href="registration.html">Регистрация</a>
+                    <a href="login.html">Войти</a>
+                    <a href="question.html">Задать вопрос</a>
+                </div>
+                <div class="ul">
+                    <a href="planets/sun.html">Солнце</a>
+                    <a href="planets/merc.html">Меркурий</a>
+                    <a href="planets/ven.html">Венера</a>
+                    <a href="planets/eart.html">Земля</a>
+                    <a href="planets/mars.html">Марс</a>
+                    <a href="planets/UP.html">Юпитер</a>
+                    <a href="planets/sat.html">Сатурн</a>
+                    <a href="planets/U.html">Уран</a>
+                    <a href="planets/Nep.html">Нептун</a>
+                    <a href="planets/Plut.html">Плутон</a>
+                </div>
+                
+            </nav>
+            
+        </header>
+        <main class="all">
+            <div class="sidebar">
+                <img src="moon-card.jpg" alt="боковая панель 1">
+                <img src="earth-card.jpg" alt="боковая панель 2">
+                <img src="sun-card.jpg" alt="боковая панель 3">
+            </div>
+            <article class="main">
+                <div class="bl-1"><h4>Заголовок</h4><span>Статья 1</span></div>
+                <div class="bl-2"><h4>Заголовок</h4><span>Статья 2</span></div>
+                <div class="bl-3"><h4>Заголовок</h4><span>Статья 3</span></div>
+                <div class="bl-4"><h4>Заголовок</h4><span>Статья 4</span></div>
+                <div class="bl-5"><h4>Заголовок</h4><span>Статья 5</span></div>
+                <div class="bl-6"><h4>Заголовок</h4><span>Статья 6</span></div>
+                <div class="bl-7"><h4>Заголовок</h4><span>Статья 7</span></div>
+            </article>
+            
+            <div class="adv">
+                <img src="moon-card.jpg" alt="реклама 1">
+                <img src="earth-card.jpg" alt="реклама 2">
+                <img src="sun-card.jpg" alt="реклама 3">
+            </div>
+        </main>
+        <div class="database">
+            <div class="data_article visible" id="article_1">
+                <div class="data" id="data_1">
+                    <span id="name_1">Солнце</span>
+                    <span id="size_1">100000</span>
+                </div>
+                <div class="buttons" id="buttons_1">
+                    <img src="up.png" alt="вверх" onclick="">
+                    <img src="down.png" alt="вниз" onclick="swap_articles('name_1', 'size_1', 'name_2', 'size_2')">
+                    <img src="delete.png" alt="удалить" onclick="delete_article('article_1')">
+                </div> 
+            </div>
+
+            <div class="data_article visible" id="article_2">
+                <div class="data" id="data_2">
+                    <span id="name_2">Земля</span>
+                    <span id="size_2">200</span>
+                </div>
+                <div class="buttons" id="buttons_2">
+                    <img src="up.png" alt="вверх" onclick="swap_articles('name_1', 'size_1', 'name_2', 'size_2')">
+                    <img src="down.png" alt="вниз" onclick="swap_articles('name_2', 'size_2', 'name_3', 'size_3')">
+                    <img src="delete.png" alt="удалить" onclick="delete_article('article_2')">
+                </div> 
+            </div>
+
+            <div class="data_article visible" id="article_3">
+                <div class="data" id="data_3">
+                    <span id="name_3">Юпитер</span>
+                    <span id="size_3">2000</span>
+                </div>
+                <div class="buttons" id="buttons_3">
+                    <img src="up.png" alt="вверх" onclick="swap_articles('name_2', 'size_2', 'name_3', 'size_3')">
+                    <img src="down.png" alt="вниз" onclick="swap_articles('name_4', 'size_4', 'name_3', 'size_3')">
+                    <img src="delete.png" alt="удалить" onclick="delete_article('article_3')">
+                </div> 
+            </div>
+
+            <div class="data_article visible" id="article_4">
+                <div class="data" id="data_4">
+                    <span id="name_4">Луна</span>
+                    <span id="size_4">20</span>
+                </div>
+                <div class="buttons" id="buttons_4">
+                    <img src="up.png" alt="вверх" onclick="swap_articles('name_4', 'size_4', 'name_3', 'size_3')">
+                    <img src="down.png" alt="вниз" onclick="">
+                    <img src="delete.png" alt="удалить" onclick="delete_article('article_4')">
+                </div> 
+            </div>
+            <div class="buttons">
+                <input id="bottom_num">
+                <input id="high_num">
+                <button type="button" onclick="show_special()">Вывести</button>
+            </div>
+            <div class="buttons">
+                <button type="button" onclick="sort(-1)">Сортировать по возрастанию</button>
+                <button type="button" onclick="sort(1)">Сортировать по убыванию</button>
+                <button type="button" onclick="stop()">Отсрочить уведомления</button>
+                <button type="button" onclick="execute()">Отключить уведомления</button>
+            </div>
+        </div>
+        <div class="cards">
+            <a class="card-1">
+                <img src="sun-card.jpg">
+                <span class="card1" id="card1">
+                    Куча текста по карточке про Солнце, чтобы проверить, что он переносится
+                </span>
+            </a>
+        
+            <a class="card-2">
+                <img src="earth-card.jpg">
+                <p class="card-2-span" id="card2">
+                    Куча текста по карточке, чтобы проверить, что он переносится
+                </p>
+            </a>
+        
+        
+            <a class="card-3">
+                <img src="moon-card.jpg">
+                <p class="card-3-span" id="card3">
+                    Куча текста по карточке, чтобы проверить, что он переносится
+                </p>
+            </a>
+            
+        </div>
+        <footer class="main-footer">
+            <div><a class="vk"><span>VK</span></a></div>
+            <div><a class="facebook"><span>F</span></a></div>
+            <div><a class="inst"><span>IN</span></a></div>
+            <div><a class="twitter"><span>TW</span></a></div>
+            <div><a class="youtube"><span>Y</span></a></div>
+            
+        </footer>
+        <script type="text/javascript" src="scripts.js"></script>
+    </body>
+
+</html>

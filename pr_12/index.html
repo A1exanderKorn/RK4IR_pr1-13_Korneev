@@ -1,0 +1,117 @@
+<html lang="en">
+    <head>
+        
+        <meta charset="UTF-8">
+        <link rel="icon" href="fav.png" type="image/png">
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <title>Практика 12</title>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap');
+        </style>
+    </head>
+    <body>
+        <header>
+            <input type="checkbox" class="logo-checkbox" id="logo-checkbox"> 
+            <label for="logo-checkbox" id="logo-label"></label>
+            <div class="burger">
+                <span></span>
+            </div>
+            
+            <nav class="logo">
+                <a href="index.html"><img src="fav.png" alt="Солнечная система" class="logo-img"></a>
+                <div class="registration">
+                    <a href="registration.html">Регистрация</a>
+                    <a href="login.html">Войти</a>
+                    <a href="question.html">Задать вопрос</a>
+                </div>
+                <div class="ul">
+                    <a href="planets/sun.html">Солнце</a>
+                    <a href="planets/merc.html">Меркурий</a>
+                    <a href="planets/ven.html">Венера</a>
+                    <a href="planets/eart.html">Земля</a>
+                    <a href="planets/mars.html">Марс</a>
+                    <a href="planets/UP.html">Юпитер</a>
+                    <a href="planets/sat.html">Сатурн</a>
+                    <a href="planets/U.html">Уран</a>
+                    <a href="planets/Nep.html">Нептун</a>
+                    <a href="planets/Plut.html">Плутон</a>
+                </div>
+                
+            </nav>
+            
+        </header>
+        
+        <ul class="database" id="nodes">
+            <li class="data_article visible" >
+                <div class="data">
+                    <span>Солнце</span>
+                    <span>100000</span>
+                </div>
+                
+            </li>
+
+            <li class="data_article visible" >
+                <div class="data">
+                    <span>Земля</span>
+                    <span">200</span>
+                </div>
+                
+            </li>
+
+            <li class="data_article visible" >
+                <div class="data">
+                    <span>Юпитер</span>
+                    <span>2000</span>
+                </div>
+                
+            </li>
+
+            <li class="data_article visible" >
+                <div class="data">
+                    <span>Луна</span>
+                    <span>20</span>
+                </div>
+            </li>
+            
+            
+        </ul>
+        <div class="buttons">
+            <button type="button" onclick="show_notif()">Уведомление</button>
+            <button type="button" onclick="add('nodes')">Добавить запись</button>
+        </div>
+        
+        <ul class="database">
+            <li>
+                <a href="https://ru.wikipedia.org/wiki/Заглавная_страница">ссылка на внешний ресурс</a>
+            </li>
+            <li>
+                <a href="index.html">ссылка на внутренний ресурс</a>
+            </li>
+            <li>
+                <a href="https://en.wikipedia.org/wiki/Main_Page">ссылка на внешний ресурс</a>
+            </li>
+            <li>
+                <a href="index.html">ссылка на внутренний ресурс</a>
+            </li>
+        </ul>
+        <div id="img-container">
+            <img src="fav.png">
+        </div>
+        <footer class="main-footer">
+            <div><a class="vk"><span>VK</span></a></div>
+            <div><a class="facebook"><span>F</span></a></div>
+            <div><a class="inst"><span>IN</span></a></div>
+            <div><a class="twitter"><span>TW</span></a></div>
+            <div><a class="youtube"><span>Y</span></a></div>
+            
+        </footer>
+        <script type="text/javascript" src="scripts.js">
+
+        </script>
+        <!-- <script>
+            var links = document.querySelector('a');
+            links.style.color = 'orange';
+        </script> -->
+        
+    </body>
+</html>

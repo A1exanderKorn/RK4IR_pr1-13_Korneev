@@ -1,0 +1,56 @@
+header {
+    font-size: 16px;
+    font-weight: 600;
+    background-image: linear-gradient(to left, #20c022, #7a20d5);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+img.logo-img{
+    width: 64px;
+     height: auto;
+}
+
+.CL_nav ul {
+    padding: 1em 64;
+    background: #ecd6e5;
+}
+.CL_nav a {
+    text-decoration: none;
+    padding: 0em;
+    background: rgba(177, 152, 145, .3);
+    border-right: 1px solid #b19891;
+    color: #695753;
+}
+.CL_nav a:hover {background: #b19891;}
+.CL_nav li {
+    display: inline;
+}
+  
+main h1{ 
+    font-family: "Bungee Spice rev=2";
+    font-weight: 400;
+    font-style: normal;
+    line-height: initial;
+    font-stretch: normal;
+}
+
+aside {
+    background: #8b6495;
+    padding: 10px;
+    width: 200px;
+    float: right;
+}
+
+aside.a.link{
+    color:#71bc78;
+}
+
+footer {
+    background: #491c1c;
+    padding: 10px;
+    width: 200px;
+    float: right;
+}
+

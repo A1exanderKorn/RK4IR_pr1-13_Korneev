@@ -1,0 +1,76 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="icon" href="fav.png" type="image/png">
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <title>Регистрация</title>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap');
+        </style>
+    </head>
+    <body>
+        <header>   
+            <nav class="logo">
+                <a href="index.html"><img src="fav.png" alt="Солнечная система" class="logo-img"></a>
+                <ul>
+                    <li><a href="planets/sun.html">Солнце</a></li>
+                    <li><a href="planets/merc.html">Меркурий</a></li>
+                    <li><a href="planets/ven.html">Венера</a></li>
+                    <li><a href="planets/eart.html">Земля</a></li>
+                    <li><a href="planets/mars.html">Марс</a></li>
+                    <li><a href="planets/UP.html">Юпитер</a></li>
+                    <li><a href="planets/sat.html">Сатурн</a></li>
+                    <li><a href="planets/U.html">Уран</a></li>
+                    <li><a href="planets/Nep.html">Нептун</a></li>
+                    <li><a href="planets/Plut.html">Плутон</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="main-container">
+            <form action="index.html" method="post" class="login-form">
+            <p><legend>Регистрация</legend></p>
+            <div class="uni"><p><label>Логин: <input type="text" required name="reg-login" placeholder="логин"></label></p></div>
+            <div class="uni"><p><label>Почта(ы): <input type="email" required multiple name="reg-email" placeholder="почта"></label></p></div>
+            <div class="uni"><p><label>Пароль: <input type="password" required name="reg-password" placeholder="пароль"></label></p></div>
+            <div class="uni"><p><label>Загрузить фото профиля: <input type="file"></label></p></div>
+            <div class="uni"><p><label>Номер телефона: +7<input pattern=[0,9]{10} type="tel" name="reg-phone" placeholder="10 цифр"></label></p></div>
+            <div class="uni"><p><label>Возраст: <input type="number" min=6 max="120" name="reg-age" placeholder="возраст"></label></p></div>
+            <div class="uni"><p><label for="registration-month">
+                Выберите ваш месяц рождения:</label>
+                <select name="reg-month" id="registration-month">
+                    <option value="None">не указано</option>
+                    <option value="Jan">Январь</option>
+                    <option value="Feb">Февраль</option>
+                    <option value="Mar">Март</option>
+                    <option value="Apr">Апрель</option>
+                    <option value="May">Май</option>
+                    <option value="Jun">Июнь</option>
+                    <option value="Jul">Июль</option>
+                    <option value="Aug">Август</option>
+                    <option value="Sep">Сентябрь</option>
+                    <option value="Oct">Октябрь</option>
+                    <option value="Nov">Ноябрь</option>
+                    <option value="Dec">Декарь</option>
+                </select>
+            
+            </div>
+            <div class="uni"><p><label>Указание местной даты и времени <input type="datetime-local" name="date" min=""></label></p></div>
+            <div class="uni"><p>Выберите сферу любимых напитков:</p>
+            <p><input type="checkbox" name="reg-checkbox" value="1">пиво</p>
+            <p><input type="checkbox" name="reg-checkbox" value="2">сладкие</p>
+            <p><input type="checkbox" name="reg-checkbox" value="3">другое</p></div>
+            <div class="uni"><p> Выберите тему сайта:</p>
+            <p><input type="radio" checked name="theme" value="light">светлая</p>
+            <p><input type="radio" name="theme" value="dark">темная</p></div>
+            <div class="uni"><p><label for="o_sebe">Вкратце расскажите о себе:</label>
+            <p><textarea id="o_sebe" rows="12" cols="51" maxlength="512" name="reg-info"></textarea></p></div>
+            <button type="submit">Войти</button>
+        </main>
+        <footer class="registration-footer">
+            <ul>
+                <li><a href=”tel:+79998887766”>Телефон: +7(999)888-77-66</a></li>
+                <li><adress><a href="mailto:MAIL@mail.ru">Почта: MAIL@mail.ru</a></adress></li>
+            </ul>
+        </footer>
+    </body>
+</html>

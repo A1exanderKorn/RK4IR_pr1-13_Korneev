@@ -1,0 +1,117 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="icon" href="fav.png" type="image/png">
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <title>Практика 5</title>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap');
+        </style>
+    </head>
+    <body>
+        <header>
+            <input type="checkbox" class="logo-checkbox" id="logo-checkbox"> 
+            <label for="logo-checkbox" id="logo-label"></label>
+            <div class="burger">
+                <span></span>
+            </div>
+            
+            <nav class="logo">
+                <a href="index.html"><img src="fav.png" alt="Солнечная система" class="logo-img"></a>
+                <div class="registration">
+                    <a href="registration.html">Регистрация</a>
+                    <a href="login.html">Войти</a>
+                </div>
+                <div class="ul">
+                    <a href="planets/sun.html">Солнце</a>
+                    <a href="planets/merc.html">Меркурий</a>
+                    <a href="planets/ven.html">Венера</a>
+                    <a href="planets/eart.html">Земля</a>
+                    <a href="planets/mars.html">Марс</a>
+                    <a href="planets/UP.html">Юпитер</a>
+                    <a href="planets/sat.html">Сатурн</a>
+                    <a href="planets/U.html">Уран</a>
+                    <a href="planets/Nep.html">Нептун</a>
+                    <a href="planets/Plut.html">Плутон</a>
+                </div>
+            </nav>
+        </header>
+        <main >
+            <article>
+                <section class="main-sun">
+                    <p>
+                        <h1>Солнечная Система</h1>
+                        <!---изображение солнца--->
+                        <a href="https://ru.wikipedia.org/wiki/Солнце"><img src="star.jpg" alt="Солнце"></a>
+                        Солнце - это звезда, вокруг которой вращаются следующие планеты со своими спутниками:
+                        <!---список планет солнечной системы--->
+                        <ul> 
+                            <li>Меркурий</li>
+                            <li>Венера</li>
+                            <li>Земля</li>
+                            <li>Марс</li>
+                            <li>Юпитер</li>
+                            <li>Сатурн</li>
+                            <li>Уран</li>
+                            <li>Нептун</li>
+                            <li>Плутон</li>
+                        </ol>          
+                    </p>
+                </section>
+                <!---список терминов--->
+                <section class="main-dt">
+                    <dl>
+                        <dt>Звезда</dt>
+                        <dd>Массивное самосветящееся небесное тело, состоящее из газа и плазмы</dd>
+                        <dt>Метеорид</dt>
+                        <dd>Небесное тело, промежуточное по размеру между космической пылью и астероидом</dd>
+                        <dd>Называют метеором, если он влетает в атмосферу Земли с огромной скоростью</dd>
+                        <dt>Астероид</dt>
+                        <dd>Относительно небольшое небесное тело Солнечной системы, движущееся по орбите вокруг Солнца</dd>
+                        <dt>Планета</dt>
+                        <dd>Небесное тело, вращающееся по орбите вокруг звезды или её остатков</dd>
+                        <dt>Планета-гигант</dt>
+                        <dd>Газовый гигант - состоит в основном из водорода и гелия</dd>
+                        <dd>Ледяной гигант - состоит в основном из элементов тяжелее водорода и гелия</dd>
+                    </dl>
+                </section>
+                <section class="cl-map">
+                    <img src="ss.jpg" usemap="#image-map" id="img_map">
+                    <!---изображение СС с ссылками--->
+                <map name="image-map">
+                    <area target="" alt="Солнце" title="Солнце" href="https://ru.wikipedia.org/wiki/Солнечная_система#Солнце" coords="3,141,56,173,104,230,142,288,166,356,183,429,184,523,175,594,161,660,127,727,66,805,0,849" shape="poly">
+                    <area target="" alt="Меркурий" title="Меркурий" href="https://ru.wikipedia.org/wiki/Меркурий" coords="232,666,272,621" shape="rect">
+                    <area target="" alt="Венера" title="Венера" href="https://ru.wikipedia.org/wiki/Венера" coords="337,596,50" shape="circle">
+                    <area target="" alt="Земля" title="Земля" href="https://ru.wikipedia.org/wiki/Земля" coords="459,557,58" shape="circle">
+                    <area target="" alt="Марс" title="Марс" href="https://ru.wikipedia.org/wiki/Марс" coords="580,510,44" shape="circle">
+                    <area target="" alt="Юпитер" title="Юпитер" href="https://ru.wikipedia.org/wiki/Юпитер" coords="745,457,110" shape="circle">
+                    <area target="" alt="Сатурн" title="Сатурн" href="https://ru.wikipedia.org/wiki/Сатурн" coords="899,412,935,388,955,339,998,320,1034,325,1086,310,1123,308,1113,333,1095,356,1062,374,1055,399,1035,428,996,445,963,434,932,450,899,460,876,453,879,434" shape="poly">
+                    <area target="" alt="Плутон" title="Плутон" href="https://ru.wikipedia.org/wiki/Плутон" coords="1353,246,1372,222" shape="rect">
+                    <area target="" alt="Уран" title="Уран" href="https://ru.wikipedia.org/wiki/Уран_(планета)" coords="1184,313,49" shape="circle">
+                    <area target="" alt="Нептун" title="Нептун" href="https://ru.wikipedia.org/wiki/Нептун" coords="1286,270,45" shape="circle">
+                </map>
+                </section>
+                <div class="main-Earth">
+                    <p>
+                        <!---изображение солнца--->
+                        <a href="https://ru.wikipedia.org/wiki/Земля"><img src="Earth.jpg" alt="Земля"></a>
+                        Земля́ — третья по удалённости от Солнца планета Солнечной системы. Самая плотная, пятая по диаметру и массе среди всех
+                        планет Солнечной системы и крупнейшая среди планет земной группы, в которую входят также Меркурий, Венера и Марс.
+                        Единственное известное человеку в настоящее время тело во Вселенной, населённое живыми организмами.
+                    </p>
+                </div>
+            </article>
+            <aside class="aside">
+                <a href="https://obshe.net/posts/id2029.html">70 интересных фактов о Солнечной системе</a>
+                <a href="https://ru.wikipedia.org/wiki/Эволюция_звёзд">Эволюция Эволюция звёзд</a>
+                <a href="https://ru.wikipedia.org/wiki/Список_ближайших_звёзд_и_субзвёзд">Список ближайших к Земле звёзд</a>
+            </aside>
+        </main>
+        <footer class="main-footer">
+            <ul>
+                <li><a href=”tel:+79998887766”>Телефон: +7(999)888-77-66</a></li>
+                <li><adress><a href="mailto:MAIL@mail.ru">Почта: MAIL@mail.ru</a></adress></li>
+            </ul>
+        </footer>
+    </body>
+</html>

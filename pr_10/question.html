@@ -1,0 +1,52 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="icon" href="fav.png" type="image/png">
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <title>Вход</title>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap');
+        </style>
+    </head>
+    <body>
+        <header>   
+            <input type="checkbox" class="logo-checkbox" id="logo-checkbox"> 
+            <label for="logo-checkbox" id="logo-label"></label>
+            <div class="burger">
+                <span></span>
+            </div>
+            
+            <nav class="logo">
+                <a href="index.html"><img src="fav.png" alt="Солнечная система" class="logo-img"></a>
+                <div class="registration">
+                    <a href="login.html">Войти</a>
+                    <a href="registration.html">Регистрация</a>
+                </div>
+                <div class="ul">
+                    <a href="planets/sun.html">Солнце</a>
+                    <a href="planets/merc.html">Меркурий</a>
+                    <a href="planets/ven.html">Венера</a>
+                    <a href="planets/eart.html">Земля</a>
+                    <a href="planets/mars.html">Марс</a>
+                    <a href="planets/UP.html">Юпитер</a>
+                    <a href="planets/sat.html">Сатурн</a>
+                    <a href="planets/U.html">Уран</a>
+                    <a href="planets/Nep.html">Нептун</a>
+                    <a href="planets/Plut.html">Плутон</a>
+                </div>
+                
+                
+            </nav>
+        </header>
+        <main>
+            <form method="get" action="index.html" class="question-container">
+                <span class="question-title">Задать вопрос</span>
+                <input class="uni-1" required type="text" name="login" id="question-mail" placeholder="почта">
+                <input class="uni-2" type="password" name="password" id="question-phone" placeholder="номер телефона">
+                <textarea required class="uni-3" type="text" name="password" id="question-text" placeholder="Опишите проблему"></textarea>
+                <button class="bttn" type="submit">Войти</button>
+            </form>
+            
+        </main>
+    </body>
+</html>
